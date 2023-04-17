@@ -1,0 +1,45 @@
+:root {
+    --color_white: white;
+    --color_blue: #094B72;
+    --colot_black: black;
+  }
+
+header {
+    background-color: var(--color_black);
+  }
+  
+  header section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  
+  header .logo {
+    font-weight: 700;
+    font-size: 150%;
+    padding-left: 10vh;
+    color: var(--color_black);
+  }
+  
+  header .logo span {
+    color: #ffffff;
+    border: 1px solid var(--color_blue);
+    border-radius: 100px;
+    padding: 8px 1vh;
+    background-color: #094B72;
+  }
+  
+  header nav ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style-type: none;
+    color: var(--color_blue);
+    text-decoration: none;
+  }
+  
+  header nav ul a {
+    display: block;
+    transition: all 0.6s ease;
+    text-align: center;
+    text-decoration: none;
+  }
